@@ -11,6 +11,14 @@
 // // 360           7           2520
 
 // //Final Return Value: 2520
+// const n = [1, 2, 3, 4];
+// const nr = n.reduce((a, c) => a + c);
+// console.log(nr);
 const n = [1, 2, 3, 4];
-const nr = n.reduce((a, c) => a + c);
-console.log(nr);
+const s = n.reduce(() => {
+  if (prv < cv) {
+    return prv;
+  }
+  return cv;
+});
+console.log(s);
